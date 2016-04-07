@@ -35,24 +35,13 @@ class Navbar extends Component {
 
               <div className={"collapse navbar-collapse "+this.state.navbarCollapse}>
                 <ul className="nav navbar-nav">
-                  <li className={this.props.current == '/bouncingBall' ? "active" : ""}>
+                  <li className={this.props.current == '/FirstSVG' ? "active" : ""}>
                     <Link to="bouncingBall">
-                      Bouncing Ball
-                      <span className="sr-only">{this.props.current == '/bouncingBall' ? "(current)" : ""}</span>
+                      FirstSVG
+                      <span className="sr-only">{this.props.current == '/FirstSVG' ? "(current)" : ""}</span>
                     </Link>
                   </li>
-                  <li className={this.props.current == '/paintBrush' ? "active" : ""}>
-                    <Link to="paintBrush">
-                      Paint Brush
-                      <span className="sr-only">{this.props.current == '/paintBrush' ? "(current)" : ""}</span>
-                    </Link>
-                  </li>
-                  <li className={this.props.current == '/breakOut' ? "active" : ""}>
-                    <Link to="breakOut">
-                      BreakOut
-                      <span className="sr-only">{this.props.current == '/breakOut' ? "(current)" : ""}</span>
-                    </Link>
-                  </li>
+
                 </ul>
               </div>
             </div>
